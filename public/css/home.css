@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+}
+div.header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header div.header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+main{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+}
+p{
+    font-size: 12px;
+}
+h3{
+    font-size: 24px;
+}
+li a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+footer p, header p, footer h3, footer{
+    text-align: center;
+}
+footer{
+    background-color: white;
+}
+article{
+    margin-bottom: 10px;
+}
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    transition: box-shadow ease-in 0.5s;
+}
+main section article img{
+    width: 100%;
+}
+.logo{
+    width: 200px;
+} 
+header .form{
+    display: flex;
+    align-items: center;
+    font-size: 9px;
+}
+main section article i,
+.descuentos{
+    color: #39b54a;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+article div.info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+#navbar, .descripciones{
+    display: none;
+}
+.burger-menu{
+    text-align: center;
+}
+.fa-bars{
+    background-color: #1259c3;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.fa-credit-card, .fa-gift, .fa-shield-alt{
+    color:#1259c3;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.fa-credit-card:hover, .fa-gift:hover, .fa-shield-alt:hover{
+    color:#39b54a;
+
+}
+.copy{
+    text-align: left;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descuentos, .descripciones{
+    font-size: 16px;
+}
+.descuentos{
+    color:#39b54a;
+    width: 70%;
+}
+.fa-truck{
+    color: #39b54a;
+    transition: transform ease-in .5s;
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+.info{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+.head3{
+    background-color: #ebebeb;
+}
+.login{
+    background-color: #1259c3;
+    color: white;
+    width:90%;
+    height: 40px;
+    transition: background-color ease-in 0.5s;
+}
+.login:hover{
+    background-color: #0022AA;
+}
+.register{
+    background-color: #1259c3;
+    color: white;
+    width: 10%;
+    height: 30px;
+}
+.register:hover{
+    background-color: #0022AA;
+}
+.input{
+    width:90%;
+    height: 40px;
+}
+form{
+    background-color: #ebebeb;
+    margin-top: 40px;
+    font-size: 20px;
+}
+@media (min-width: 361px){
+    main section div.products article{
+        width: 50%;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .descripciones{
+        display: block;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .descripciones:hover{
+        opacity: 1;
+    }
+    #navbar{
+        display:flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    #navbar ul{
+        display: flex;
+    }
+    li{
+        margin: 0 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section article .descripciones{
+        display: block;
+    }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .precio,
+    .descuentos{
+        width: 50%;
+    }
+}
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+    div.header p {
+        flex-grow: 0.7;
+    }
+    div.header  {
+        flex-wrap: nowrap;
+        margin:auto;
+    }
+    .copy{
+        max-width: 500px;
+        text-align: right;
+    }
+    #footer{
+        display:flex;
+        justify-content: space-around;
+        margin: 10px;
+    }
+}
+@media (min-width: 1200px){
+    .header, #navbar{
+        margin: auto;
+    }
+}
